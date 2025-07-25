@@ -1,11 +1,6 @@
-import type { Metadata } from 'next'
-import { Layout } from '@/components/layout/Layout'
 import './globals.css'
-
-export const metadata: Metadata = {
-  title: 'Indian Stock Market Platform',
-  description: 'Comprehensive stock analysis and trading platform',
-}
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import { Layout } from '@/components/layout/Layout'
 
 export default function RootLayout({
   children,
@@ -15,7 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <Layout>{children}</Layout>
+        <ThemeProvider>
+          <Layout>
+            {children}
+          </Layout>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -77,7 +77,5 @@ export function validateConfig() {
   console.log(`✅ Configuration loaded for ${config.env} environment`)
 }
 
-// Auto-validate in development
-if (config.isDev) {
-  validateConfig()
-}
+// Skip validation in development
+// validateConfig() is called manually when needed

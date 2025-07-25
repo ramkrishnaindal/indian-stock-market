@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html.dark {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+html.dark body {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+html.dark main {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+html.dark a {
+  color: #60a5fa !important;
+}
+
+html.dark h1, html.dark h2, html.dark h3 {
+  color: #ffffff !important;
+}
+
+html.light {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+html.light body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+html.light main {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}

@@ -1,0 +1,2 @@
+- Need to use ShadCN and Tailwind
+- Create highly attractive modern UI with vibrant colors, animations, and premium design
